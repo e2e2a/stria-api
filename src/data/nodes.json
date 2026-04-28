@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "node-1",
+    "projectId": "project-1",
+    "parentId": null,
+    "type": "folder",
+    "title": "Getting Started",
+    "path": "/Getting Started",
+    "children": [],
+    "content": null,
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "node-2",
+    "projectId": "project-1",
+    "parentId": "node-1",
+    "type": "file",
+    "title": "Welcome",
+    "path": "/Getting Started/Welcome",
+    "children": [],
+    "content": "# Welcome\n\nThis is your first note! Start writing here.\n\n## Tips\n\n- Use `[[links]]` to connect notes\n- Use `#tags` to organize",
+    "createdAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "_id": "node-3",
+    "projectId": "project-1",
+    "parentId": null,
+    "type": "file",
+    "title": "Quick Note",
+    "path": "/Quick Note",
+    "children": [],
+    "content": "# Quick Note\n\nJot things down here.",
+    "createdAt": "2024-01-02T00:00:00.000Z"
+  }
+]
