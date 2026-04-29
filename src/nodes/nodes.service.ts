@@ -57,15 +57,16 @@ export class NodesService {
       createdAt: new Date().toISOString(),
     };
 
-    this.nodes.push(newNode);
+    // this.nodes.push(newNode); // ignoring creation
     return newNode;
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   update(nodeId: string, body: UpdateNodeBody): FileNode {
     const index = this.nodes.findIndex((candidate) => candidate._id === nodeId);
     if (index === -1) throw new NotFoundException(`Node ${nodeId} not found`);
 
-    this.nodes[index] = { ...this.nodes[index], ...body };
+    // this.nodes[index] = { ...this.nodes[index], ...body }; // ignore update
     return this.nodes[index];
   }
 
@@ -75,11 +76,12 @@ export class NodesService {
     );
     if (index === -1) throw new NotFoundException(`Node ${body._id} not found`);
 
-    this.nodes[index].parentId = body.parentId;
-    this.nodes[index].path = this.buildPath(
-      body.parentId,
-      this.nodes[index].title,
-    );
+    // ignoring move files
+    // this.nodes[index].parentId = body.parentId;
+    // this.nodes[index].path = this.buildPath(
+    //   body.parentId,
+    //   this.nodes[index].title,
+    // );
     return this.nodes[index];
   }
 
@@ -91,11 +93,12 @@ export class NodesService {
     const index = this.nodes.findIndex((candidate) => candidate._id === nodeId);
     if (index === -1) throw new NotFoundException(`Node ${nodeId} not found`);
 
-    const deleted = this.nodes[index];
-    this.nodes[index] = {
-      ...deleted,
-      archived: { at: new Date().toISOString(), reason: "deleted" },
-    };
+    // ignoring remove
+    // const deleted = this.nodes[index];
+    // this.nodes[index] = {
+    //   ...deleted,
+    //   archived: { at: new Date().toISOString(), reason: "deleted" },
+    // };
 
     return {
       _id: nodeId,
@@ -105,22 +108,23 @@ export class NodesService {
   }
 
   restore(body: RestoreNodesBody): { nodes: FileNode[]; message: string } {
-    body.nodes.forEach((incoming) => {
-      const index = this.nodes.findIndex(
-        (candidate) => candidate._id === incoming._id,
-      );
-      if (index !== -1) {
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        const { archived, ...rest } = this.nodes[index];
-        this.nodes[index] = rest;
-        return;
-      }
+    // ignoring restore loop completely
+    // body.nodes.forEach((incoming) => {
+    //   const index = this.nodes.findIndex(
+    //     (candidate) => candidate._id === incoming._id,
+    //   );
+    //   if (index !== -1) {
+    //     // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    //     const { archived, ...rest } = this.nodes[index];
+    //     this.nodes[index] = rest;
+    //     return;
+    //   }
 
-      this.nodes.push({
-        ...incoming,
-        children: incoming.children ?? [],
-      });
-    });
+    //   this.nodes.push({
+    //     ...incoming,
+    //     children: incoming.children ?? [],
+    //   });
+    // });
 
     return { nodes: body.nodes, message: "Nodes restored" };
   }
