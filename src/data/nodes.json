@@ -3,33 +3,77 @@
     "_id": "node-1",
     "projectId": "project-1",
     "parentId": null,
-    "type": "folder",
-    "title": "Getting Started",
-    "path": "/Getting Started",
+    "type": "file",
+    "title": "Welcome to Your Vault",
+    "path": "/Welcome to Your Vault",
     "children": [],
-    "content": null,
-    "createdAt": "2024-01-01T00:00:00.000Z"
+    "content": "---\ntags: home, welcome\n---\n\n# Welcome to Your Vault 👋\n\nTake a deep breath and relax. This is your personal space to think, write, and connect your ideas. \n\nWhether you're writing code, drafting a novel, or organizing your thoughts, we've got you covered.\n\n## Where to start?\nIf you're new here, we recommend checking out the [[/Formatting Guide/Basic Typography]] guide, or jumping straight into [[/Formatting Guide/Advanced Components]] if you want to see what this editor can really do.\n\nCurious about how your notes connect? Open the [[/Knowledge Base/The Graph View]].",
+    "createdAt": "2024-01-01T10:00:00.000Z"
   },
   {
     "_id": "node-2",
     "projectId": "project-1",
-    "parentId": "node-1",
-    "type": "file",
-    "title": "Welcome",
-    "path": "/Getting Started/Welcome",
+    "parentId": null,
+    "type": "folder",
+    "title": "Formatting Guide",
+    "path": "/Formatting Guide",
     "children": [],
-    "content": "# Welcome\n\nThis is your first note! Start writing here.\n\n## Tips\n\n- Use `[[links]]` to connect notes\n- Use `#tags` to organize",
-    "createdAt": "2024-01-01T00:00:00.000Z"
+    "content": null,
+    "createdAt": "2024-01-01T10:05:00.000Z"
   },
   {
     "_id": "node-3",
     "projectId": "project-1",
-    "parentId": null,
+    "parentId": "node-2",
     "type": "file",
-    "title": "Quick Note",
-    "path": "/Quick Note",
+    "title": "Basic Typography",
+    "path": "/Formatting Guide/Basic Typography",
     "children": [],
-    "content": "# Quick Note\n\nJot things down here.",
-    "createdAt": "2024-01-02T00:00:00.000Z"
+    "content": "# Basic Typography\n\nWriting should feel natural. Just start typing, and use simple symbols to format your text.\n\n## Emphasis\nMake your words stand out with **bold** text, *italics*, or ~~strikethrough~~. You can also ==highlight important phrases== to easily find them later.\n\n## Lists\nOrganize your thoughts into clear lists:\n\n### Unordered\n- First, find a quiet place.\n- Second, open a new note.\n  - *Pro tip: use shortcuts!*\n\n### Ordered\n1. Write down your ideas.\n2. Connect them using `[[links]]`.\n3. Review your [[/Knowledge Base/The Graph View]].\n\n> \"The palest ink is better than the best memory.\"\n> — Chinese Proverb\n\nReady for more? Check out [[/Formatting Guide/Advanced Components]].",
+    "createdAt": "2024-01-01T10:10:00.000Z"
+  },
+  {
+    "_id": "node-4",
+    "projectId": "project-1",
+    "parentId": "node-2",
+    "type": "file",
+    "title": "Advanced Components",
+    "path": "/Formatting Guide/Advanced Components",
+    "children": [],
+    "content": "# Advanced Components\n\nWhen plain text isn't enough, we give you the tools to structure complex data.\n\n## Tables\nKeep your data neat and tidy:\n\n| Feature | Status | Difficulty |\n| :--- | :---: | ---: |\n| Markdown | Active | Easy |\n| Graph View | Beta | Medium |\n| Syncing | Planning | Hard |\n\n## Code Snippets\nAre you a developer? Use inline code like `npm install`, or create full code blocks:\n\n```typescript\nfunction initializeVault() {\n  console.log('Vault loaded!');\n}\n```\n\nSee how to make these stand out even more in [[/Formatting Guide/Custom Callouts]].",
+    "createdAt": "2024-01-01T10:15:00.000Z"
+  },
+  {
+    "_id": "node-5",
+    "projectId": "project-1",
+    "parentId": "node-2",
+    "type": "file",
+    "title": "Custom Callouts",
+    "path": "/Formatting Guide/Custom Callouts",
+    "children": [],
+    "content": "---\ntags: callouts, ui\n---\n\n# Custom Callouts\n\nCallouts are a fantastic way to draw attention to specific parts of your notes.\n\n> [!info] Did you know?\n> You can nest callouts, lists, and even other markdown elements inside here.\n\n> [!success] Goal Achieved\n> You've successfully learned how to format text!\n\n> [!warning] Careful\n> Deleting a note cannot be undone unless you have a backup.\n\n## To-Do Lists\nYou can also track your progress right inside your notes:\n- [x] Read [[/Welcome to Your Vault]]\n- [x] Learn about [[/Formatting Guide/Basic Typography]]\n- [ ] Master [[/Formatting Guide/Advanced Components]]\n- [ ] Explore [[/Knowledge Base/The Graph View]]",
+    "createdAt": "2024-01-01T10:20:00.000Z"
+  },
+  {
+    "_id": "node-6",
+    "projectId": "project-1",
+    "parentId": null,
+    "type": "folder",
+    "title": "Knowledge Base",
+    "path": "/Knowledge Base",
+    "children": [],
+    "content": null,
+    "createdAt": "2024-01-02T09:00:00.000Z"
+  },
+  {
+    "_id": "node-7",
+    "projectId": "project-1",
+    "parentId": "node-6",
+    "type": "file",
+    "title": "The Graph View",
+    "path": "/Knowledge Base/The Graph View",
+    "children": [],
+    "content": "# The Graph View\n\nThis is where the magic happens. Every time you use double brackets to link to another note, like [[/Welcome to Your Vault]], a connection is formed.\n\n## Why use links?\nBy linking [[/Formatting Guide/Basic Typography]], [[/Formatting Guide/Advanced Components]], and [[/Formatting Guide/Custom Callouts]] together, you create a web of knowledge.\n\nOver time, clusters will form around your most important topics, such as #productivity or #development. This mimics how your brain actually works!",
+    "createdAt": "2024-01-02T09:05:00.000Z"
   }
 ]
