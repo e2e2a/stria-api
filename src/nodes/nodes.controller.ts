@@ -6,6 +6,7 @@ import {
   Param,
   Patch,
   Post,
+  Query,
 } from "@nestjs/common";
 import type {
   CreateNodeBody,
@@ -18,6 +19,14 @@ import { NodesService } from "./nodes.service";
 @Controller("nodes")
 export class NodesController {
   constructor(private readonly nodesService: NodesService) {}
+
+  @Get()
+  findAll(
+    @Query("projectId") projectId?: string,
+    @Query("exclude") exclude?: string,
+  ) {
+    return this.nodesService.findAll(projectId, exclude);
+  }
 
   @Post("move")
   move(@Body() body: MoveNodeBody) {
