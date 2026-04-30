@@ -9,8 +9,7 @@ async function bootstrap() {
   const frontendOrigin =
     configService.get<string>("VITE_FRONT_END_BASE_URL") ??
     "http://localhost:5173";
-  console.log("frontendOrigin", frontendOrigin);
-  console.log("VITE_FRONT_END_BASE_URL", process.env.VITE_FRONT_END_BASE_URL);
+
   app.setGlobalPrefix("api");
   app.enableCors({
     origin: frontendOrigin,
