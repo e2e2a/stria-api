@@ -1,5 +1,5 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
-import { v4 as uuidv4 } from "uuid";
+// import { v4 as uuidv4 } from "uuid";
 import nodesData from "../data/nodes.json";
 import {
   ArchivedState,
@@ -14,7 +14,9 @@ import {
   SearchResult,
   UpdateNodeBody,
 } from "../types/node.types";
+import { randomUUID } from "crypto";
 
+const uuidv4 = randomUUID;
 @Injectable()
 export class NodesService {
   private nodes: FileNode[] = [...(nodesData as FileNode[])];
