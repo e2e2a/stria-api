@@ -240,5 +240,16 @@
     "children": [],
     "content": "# Appearance\n\nThe Appearance settings let you customize how your workspace looks.\n\n## Theme\n\nChoose how the interface is displayed:\n\n- Light\n- Dark\n- System (follows your device settings)\n\n## Accent Color\n\nChange the highlight color used in the editor.\n\nThis affects:\n- Cursor color\n- Selection highlights\n\n## Layout\n\nControl how elements are displayed:\n\n- Toggle inline title\n- Show or hide the tab title bar\n\n## Typography\n\nCustomize how text appears:\n\n- Interface font (menus and panels)\n- Document font (your notes)\n- Monospace font (code and technical text)\n- Font size\n\n## Try it\n\n1. Open Settings\n2. Go to Appearance\n3. Change the theme or font size\n4. Observe the changes in real time\n\n## Notes\n\n- Changes are applied instantly\n- Some fonts depend on what is available on your system\n- Reset options are available for certain settings",
     "createdAt": "2024-01-03T09:32:00.000Z"
+  },
+  {
+    "_id": "node-editor-options",
+    "projectId": "project-1",
+    "parentId": null,
+    "type": "file",
+    "title": "Editor Options",
+    "path": "/Editor Options",
+    "children": [],
+    "content": "# Editor Options\n\nEditor Options let you control how a file is displayed and managed.\n\n## How to open\n\nRight-click on a tab at the top of the editor.\n\nThis will open the tab menu.\n\n## View modes\n\n### Reading View\n\nSwitch between editable content and a clean reading layout.\n\n- Focus on content without editing distractions\n\n### Source Mode\n\nView the raw markdown source of your note.\n\n- See the underlying formatting symbols\n\n### Chunk Mode\n\nSplit the document into editable sections.\n\n- Useful for working with large notes\n- Available only in supported files\n\n## Tab management\n\nYou can manage open tabs directly from the menu:\n\n- Close Tab\n- Close Others\n- Close Tabs to the Right\n\n## Try it\n\n1. Open multiple notes\n2. Right-click on a tab\n3. Try switching to Reading View or Source Mode\n4. Close tabs using the menu options\n\n## Notes\n\n- Some options may not appear depending on the file\n- View modes only affect the current tab\n- Changes do not modify your content\n\nTo learn how to edit content, see [[/Context Menu]].",
+    "createdAt": "2024-01-03T09:20:00.000Z"
   }
 ]
