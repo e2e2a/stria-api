@@ -18,7 +18,7 @@
     "title": "Headings",
     "path": "/Formatting Examples/Headings",
     "children": [],
-    "content": "# Headings\n\nUse headings to structure your content.\n\n## Example\n\n# Heading 1\n## Heading 2\n### Heading 3\n#### Heading 4\n\n## Try it\nType `#` followed by a space.",
+    "content": "# Headings\n\nHeadings are used to structure your document into sections.\n\nThey make your content easier to read, navigate, and organize.\n\n---\n\n## Syntax\n\nA heading is created using the `#` symbol followed by a space, then your text.\n\nThe number of `#` symbols determines the level of the heading.\n\n```markdown\n# Heading 1\n## Heading 2\n### Heading 3\n#### Heading 4\n##### Heading 5\n###### Heading 6\n```\n\n---\n\n## How It Works\n\n- `#` = largest heading (main title)\n- `######` = smallest heading\n- You can use up to 6 levels\n\n---\n\n## Rules\n\n- `#` must be at the **start of the line**\n- A **space is required** after the `#`\n- Text must come **after the space**\n\n❌ Incorrect:\n```markdown\n#Heading\n```\n\n✅ Correct:\n```markdown\n# Heading\n```\n\n---\n\n## Example\n\n# Heading 1\n## Heading 2\n### Heading 3\n#### Heading 4\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n## My Section Title\n```\n\nThen press Enter and continue writing your content below it.",
     "createdAt": "2024-01-03T10:01:00.000Z"
   },
   {
@@ -29,7 +29,7 @@
     "title": "Bold & Italic",
     "path": "/Formatting Examples/Bold & Italic",
     "children": [],
-    "content": "# Bold & Italic\n\nStyle your text for emphasis.\n\n## Example\n\n**Bold text**\n*Italic text*\n***Bold Italic***\n\n## Try it\nUse `**text**`, `*text*`, or `***text***`.",
+    "content": "# Bold & Italic\n\nBold and italic formatting are used to emphasize text.\n\nThey help highlight important words, phrases, or ideas.\n\n---\n\n## Syntax\n\nYou must wrap text with matching symbols on both sides.\n\n```markdown\n*italic*\n**bold**\n***bold italic***\n```\n\n---\n\n## How It Works\n\n- `*text*` → *Italic*\n- `**text**` → **Bold**\n- `***text***` → ***Bold Italic***\n\n---\n\n## Rules\n\n- Formatting symbols must **wrap the text completely**\n- Opening and closing symbols must **match exactly**\n- No space between the symbols and the text\n\n❌ Incorrect:\n```markdown\n* italic *\n**bold\n```\n\n✅ Correct:\n```markdown\n*italic*\n**bold**\n```\n\n---\n\n## Example\n\nThis is *italic text*.\n\nThis is **bold text**.\n\nThis is ***bold and italic text***.\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\nThis is *important* and this is **very important**.\n```\n\nThen experiment by combining them:\n\n```markdown\n***Very important text***\n```",
     "createdAt": "2024-01-03T10:02:00.000Z"
   },
   {
@@ -40,7 +40,7 @@
     "title": "Inline Code",
     "path": "/Formatting Examples/Inline Code",
     "children": [],
-    "content": "# Inline Code\n\nHighlight short code snippets.\n\n## Example\n\nUse `npm install` to install packages.\n\n## Try it\nWrap text with backticks: `code`.",
+    "content": "# Inline Code\n\nInline code is used to highlight short pieces of code, commands, or technical terms within a sentence.\n\nIt is commonly used for things like commands, variable names, or file paths.\n\n---\n\n## Syntax\n\nWrap the text with a single backtick (`) on both sides.\n\n```markdown\n`code`\n```\n\n---\n\n## How It Works\n\n- Text inside backticks is displayed in a monospace font\n- Formatting like *italic* or **bold** will NOT be applied inside inline code\n\nExample:\n\nUse `npm install` to install packages.\n\n---\n\n## Rules\n\n- Must start and end with a backtick (`)\n- No spaces between the backtick and the text\n\n❌ Incorrect:\n```markdown\n`\n code \n`\n```\n\n✅ Correct:\n```markdown\n`code`\n```\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\nRun `npm start` to launch the app.\n```",
     "createdAt": "2024-01-03T10:03:00.000Z"
   },
   {
@@ -51,7 +51,7 @@
     "title": "Lists",
     "path": "/Formatting Examples/Lists",
     "children": [],
-    "content": "# Lists\n\nOrganize items clearly.\n\n## Bullet List\n- Item one\n- Item two\n  - Nested item\n\n## Numbered List\n1. First\n2. Second\n3. Third\n\n## Try it\nUse `-` or `1.` to create lists.",
+    "content": "# Lists\n\nLists help organize content into clear, readable items.\n\nYou can create unordered (bullet) lists and ordered (numbered) lists.\n\n---\n\n## Bullet List (Unordered)\n\n## Syntax\n\nUse `-`, `*`, or `+` followed by a space.\n\n```markdown\n- Item one\n- Item two\n- Item three\n```\n\n---\n\n## Numbered List (Ordered)\n\n## Syntax\n\nUse a number followed by a period and a space.\n\n```markdown\n1. First\n2. Second\n3. Third\n```\n\n---\n\n## Nested Lists\n\nYou can create sub-items by indenting with spaces.\n\n```markdown\n- Item one\n- Item two\n  - Nested item\n  - Another nested item\n- Item three\n```\n\n---\n\n## Rules\n\n- A space is required after `-` or `1.`\n- Indentation must be consistent (use 2 spaces)\n- Mixing list types is allowed but should be structured clearly\n\n❌ Incorrect:\n```markdown\n-Item\n1.First\n```\n\n✅ Correct:\n```markdown\n- Item\n1. First\n```\n\n---\n\n## Example\n\n- Fruits\n  - Apple\n  - Banana\n- Vegetables\n  - Carrot\n\n1. Step one\n2. Step two\n3. Step three\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n- Task 1\n- Task 2\n  - Subtask 2.1\n```\n\nThen try creating your own numbered steps.",
     "createdAt": "2024-01-03T10:04:00.000Z"
   },
   {
@@ -62,7 +62,7 @@
     "title": "Tables",
     "path": "/Formatting Examples/Tables",
     "children": [],
-    "content": "# Tables\n\nDisplay structured data.\n\n## Example\n\n| Name | Status |\n|------|--------|\n| Demo | Active |\n\n## Try it\nUse `|` to separate columns.",
+    "content": "# Tables\n\nTables are used to display structured data in rows and columns.\n\nThey are especially useful for comparing values or organizing information clearly.\n\n---\n\n## Syntax\n\nA table is created using pipes (`|`) to separate columns.\n\nThe second row is required and defines the column structure.\n\n```markdown\n| Column 1 | Column 2 |\n|----------|----------|\n| Value A  | Value B  |\n```\n\n---\n\n## How It Works\n\n- First row = column headers\n- Second row = separator (must use dashes `-`)\n- Remaining rows = data\n\n---\n\n## Alignment (Optional)\n\nYou can control text alignment using colons (`:`).\n\n```markdown\n| Left | Center | Right |\n|:-----|:------:|------:|\n| A    | B      | C     |\n```\n\n- `:---` = left aligned\n- `:---:` = centered\n- `---:` = right aligned\n\n---\n\n## Rules\n\n- Pipes (`|`) must separate each column\n- The separator row is required\n- Each row should have the same number of columns\n\n❌ Incorrect:\n```markdown\n| Name | Status |\n| Name | Active |\n```\n\n✅ Correct:\n```markdown\n| Name | Status |\n|------|--------|\n| Demo | Active |\n```\n\n---\n\n## Example\n\n| Name | Status |\n|------|--------|\n| Demo | Active |\n| Test | Pending |\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n| Task | Done |\n|------|------|\n| Learn | Yes |\n| Build | No  |\n```\n\nThen try adding another column.",
     "createdAt": "2024-01-03T10:05:00.000Z"
   },
   {
@@ -73,7 +73,7 @@
     "title": "Blockquotes",
     "path": "/Formatting Examples/Blockquotes",
     "children": [],
-    "content": "# Blockquotes\n\nHighlight quoted text.\n\n## Example\n\n> This is a quote.\n\n## Try it\nStart a line with `>`.",
+    "content": "# Blockquotes\n\nBlockquotes are used to highlight quoted text, notes, or important sections.\n\nThey are commonly used for quotes, tips, or emphasis.\n\n---\n\n## Syntax\n\nStart a line with a greater-than symbol (`>`) followed by a space.\n\n```markdown\n> This is a quote\n```\n\n---\n\n## How It Works\n\n- Everything after `>` becomes part of the quote\n- You can span multiple lines by repeating `>`\n\n```markdown\n> This is a quote\n> that continues on another line\n```\n\n---\n\n## Nested Blockquotes\n\nYou can nest blockquotes by adding more `>` symbols.\n\n```markdown\n> Outer quote\n>> Inner quote\n```\n\n---\n\n## Rules\n\n- `>` must be at the start of the line\n- A space is required after `>`\n\n❌ Incorrect:\n```markdown\n>This is wrong\n```\n\n✅ Correct:\n```markdown\n> This is correct\n```\n\n---\n\n## Example\n\n> This is a quote.\n>\n> It can span multiple lines.\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n> This is an important note\n```\n\nThen try creating a nested quote:\n\n```markdown\n> Main idea\n>> Supporting detail\n```",
     "createdAt": "2024-01-03T10:06:00.000Z"
   },
   {
@@ -84,7 +84,7 @@
     "title": "Callouts",
     "path": "/Formatting Examples/Callouts",
     "children": [],
-    "content": "# Callouts\n\nDraw attention to important content.\n\n## Example\n\n> [!info] Info\n> This is an info callout.\n\n> [!warning] Warning\n> Be careful with this action.\n\n## Try it\nUse `> [!type]`.",
+    "content": "# Callouts\n\nCallouts are used to highlight important information such as notes, warnings, or tips.\n\nThey are an extension of blockquotes with a structured format.\n\n---\n\n## Syntax\n\nA callout starts with a blockquote (`>`) followed by a type label.\n\n```markdown\n> [!type] Title\n> Content goes here\n```\n\n---\n\n## How It Works\n\n- `>` creates the blockquote container\n- `[!type]` defines the callout style\n- The title appears next to the type\n- Additional lines must also start with `>`\n\n---\n\n## Common Types\n\n```markdown\n> [!info] Info\n> Informational message\n\n> [!warning] Warning\n> Something to be careful about\n\n> [!tip] Tip\n> Helpful suggestion\n\n> [!note] Note\n> General note\n```\n\n---\n\n## Rules\n\n- Must start with `>`\n- `[!type]` must be inside square brackets\n- A space is required after `>`\n- Every line in the callout must begin with `>`\n\n❌ Incorrect:\n```markdown\n[!info] Missing blockquote\n> [!info]Missing space\n```\n\n✅ Correct:\n```markdown\n> [!info] Info\n> Proper callout format\n```\n\n---\n\n## Example\n\n> [!info] Info\n> This is an informational message.\n\n> [!warning] Warning\n> Be careful with this action.\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n> [!tip] Tip\n> Try experimenting with different types.\n```\n\nThen create your own custom callout.",
     "createdAt": "2024-01-03T10:07:00.000Z"
   },
   {
@@ -106,7 +106,7 @@
     "title": "Task Lists",
     "path": "/Formatting Examples/Task Lists",
     "children": [],
-    "content": "# Task Lists\n\nTrack progress.\n\n## Example\n\n- [x] Done\n- [ ] Not done\n\n## Try it\nUse `- [ ]`.",
+    "content": "# Task Lists\n\nTask lists are used to track progress with checkboxes.\n\nThey are useful for to-do lists, workflows, and planning.\n\n---\n\n## Syntax\n\nA task list is created using a list (`-`) followed by a checkbox.\n\n```markdown\n- [ ] Not done\n- [x] Done\n```\n\n---\n\n## How It Works\n\n- `[ ]` = unchecked task\n- `[x]` = completed task\n- Must be part of a list (`-` or `*`)\n\n---\n\n## Rules\n\n- A space is required inside the brackets\n- A space is required after the closing bracket\n- Must follow list syntax\n\n❌ Incorrect:\n```markdown\n-[ ]Task\n- [x]Done\n```\n\n✅ Correct:\n```markdown\n- [ ] Task\n- [x] Done\n```\n\n---\n\n## Nested Tasks\n\nYou can create subtasks using indentation.\n\n```markdown\n- [ ] Main task\n  - [ ] Subtask\n  - [x] Completed subtask\n```\n\n---\n\n## Example\n\n- [x] Learn markdown\n- [ ] Build a project\n  - [ ] Setup files\n  - [ ] Write content\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n- [ ] Task one\n- [x] Task two\n```\n\nThen try adding subtasks under one item.",
     "createdAt": "2024-01-03T10:09:00.000Z"
   },
   {
@@ -114,10 +114,10 @@
     "projectId": "project-1",
     "parentId": "node-formatting",
     "type": "file",
-    "title": "Links & Images",
-    "path": "/Formatting Examples/Links & Images",
+    "title": "Links",
+    "path": "/Formatting Examples/Links",
     "children": [],
-    "content": "# Links & Images\n\nAdd references and media.\n\n## Links\n[Example](https://example.com)\n\n## Images\n![Alt text](https://via.placeholder.com/150)\n\n## Try it\nUse `[text](url)` or `![alt](url)`.",
+    "content": "# Links\n\nLinks allow you to connect to external websites or other notes inside your workspace.\n\n---\n\n## External Links\n\nExternal links point to websites using a URL.\n\n### Syntax\n\n```markdown\n[text](https://example.com)\n```\n\n### Example\n\n[Open Example](https://example.com)\n\n---\n\n## Internal Links\n\nInternal links connect to other files in your project.\n\n### Syntax\n\n```markdown\n[[/path/to/file]]\n```\n\n### Example\n\n```markdown\n[[/Formatting Examples/Blockquotes]]\n```\n\nThis will link to the **Blockquotes** file.\n\n---\n\n## How It Works\n\n- External links use `[text](url)`\n- Internal links use `[[path]]`\n- Internal paths must match the file path exactly\n\n---\n\n## Rules\n\n- External links require both `[]` and `()`\n- Internal links require double brackets `[[ ]]`\n- Paths are case-sensitive and must be exact\n\n❌ Incorrect:\n```markdown\n[Example]https://example.com\n[[Formatting Examples/Blockqoutes]]\n```\n\n✅ Correct:\n```markdown\n[Example](https://example.com)\n[[/Formatting Examples/Blockquotes]]\n```\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n[Visit site](https://example.com)\n\n[[/Formatting Examples/Headings]]\n```\n\nThen try linking to another file in your workspace.",
     "createdAt": "2024-01-03T10:10:00.000Z"
   },
   {
@@ -139,7 +139,7 @@
     "title": "Strikethrough & Highlight",
     "path": "/Formatting Examples/Strikethrough & Highlight",
     "children": [],
-    "content": "# Strikethrough & Highlight\n\nModify text visibility.\n\n## Example\n\n~~Removed text~~\n==Highlighted text==\n\n## Try it\nUse `~~text~~` or `==text==`.",
+    "content": "# Strikethrough & Highlight\n\nStrikethrough and highlight are used to modify how text appears for emphasis or clarity.\n\nThey are useful for showing removed content or drawing attention to important text.\n\n---\n\n## Syntax\n\n```markdown\n~~text~~\n==text==\n```\n\n---\n\n## How It Works\n\n- `~~text~~` → ~~Strikethrough~~ (used to show removed or outdated content)\n- `==text==` → ==Highlight== (used to emphasize important content)\n\n---\n\n## Rules\n\n- Symbols must wrap the text completely\n- Opening and closing symbols must match\n- No spaces between symbols and text\n\n❌ Incorrect:\n```markdown\n~~ text ~~\n==highlight\n```\n\n✅ Correct:\n```markdown\n~~text~~\n==highlight==\n```\n\n---\n\n## Combining Formatting\n\nYou can combine with other formatting like bold or italic.\n\n```markdown\n**~~bold removed~~**\n==*highlighted italic*==\n```\n\n---\n\n## Example\n\nThis is ~~deleted text~~.\n\nThis is ==important text==.\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\nThis is ~~old~~ and this is ==new==.\n```\n\nThen try combining it with bold or italic formatting.",
     "createdAt": "2024-01-03T10:12:00.000Z"
   },
   {
@@ -150,7 +150,7 @@
     "title": "Internal Links",
     "path": "/Formatting Examples/Internal Links",
     "children": [],
-    "content": "# Internal Links\n\nLink between notes.\n\n## Example\n\n[[/Welcome to Your Vault]]\n\n## Try it\nUse `[[path]]`.",
+    "content": "# Internal Links\n\nInternal links connect one note to another within your workspace.\n\nThey allow you to build a network of related content.\n\n---\n\n## Syntax\n\n```markdown\n[[/path/to/file]]\n```\n\n---\n\n## How It Works\n\n- The path must match the file path exactly\n- When clicked, it opens the linked file\n- This creates a connection between notes\n\n---\n\n## Linking to Existing Files\n\n```markdown\n[[/Welcome to Your project]]\n```\n\n```markdown\n[[/Formatting Examples/Blockquotes]]\n```\n\n---\n\n## Rules\n\n- Must use double brackets `[[ ]]`\n- Paths are **case-sensitive**\n- Paths must be exact (including spaces)\n- Always include the leading `/`\n\n❌ Incorrect:\n```markdown\n[[Formatting Examples/Blockquotes]]\n[[/formatting examples/blockquotes]]\n```\n\n✅ Correct:\n```markdown\n[[/Formatting Examples/Blockquotes]]\n```\n\n---\n\n## Notes\n\n- If the path does not exist, the link may break or not resolve\n- Use consistent naming for files to avoid errors\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n[[/Formatting Examples/Headings]]\n```\n\nThen try linking to another file in your workspace.",
     "createdAt": "2024-01-03T10:14:00.000Z"
   },
   {
@@ -172,7 +172,7 @@
     "title": "Code Blocks",
     "path": "/Formatting Examples/Code Blocks",
     "children": [],
-    "content": "# Code Blocks\n\nDisplay larger code snippets.\n\n## Example\n\n```javascript\nconsole.log('Hello world');\n```\n\n## Try it\nUse triple backticks.",
+    "content": "# Code Blocks\n\nCode blocks are used to display larger pieces of code or preformatted text.\n\nThey preserve spacing, formatting, and optionally enable syntax highlighting.\n\n---\n\n## Syntax\n\nWrap your code with triple backticks (```).\n\n```markdown\n```language\ncode here\n```\n```\n\n---\n\n## How It Works\n\n- Opening backticks start the block\n- Closing backticks end the block\n- You can specify a language for syntax highlighting\n\n---\n\n## With Language (Recommended)\n\n```markdown\n```javascript\nconsole.log(\"Hello world\");\n```\n```\n\n---\n\n## Without Language\n\n```markdown\n```\nplain text\n```\n```\n\n---\n\n## Rules\n\n- Must start and end with **exactly three backticks**\n- Opening and closing backticks must match\n- The closing backticks must be on a new line\n\n❌ Incorrect:\n```markdown\n```js\nconsole.log(\"Hello\")\n``\n```\n\n✅ Correct:\n```markdown\n```js\nconsole.log(\"Hello\")\n```\n```\n\n---\n\n## Nested Code Blocks\n\nIf your code contains triple backticks, use four backticks to wrap the outer block.\n\n````markdown\n````\n```javascript\nconsole.log(\"Nested block\");\n```\n````\n````\n\n---\n\n## Example\n\n```javascript\nfunction greet() {\n  console.log(\"Hello world\");\n}\n```\n\n---\n\n## Try it\n\nType this exactly:\n\n```markdown\n```javascript\nconst x = 10;\nconsole.log(x);\n```\n```\n\nThen try changing the language (e.g., `json`, `bash`, `html`).",
     "createdAt": "2024-01-03T10:16:00.000Z"
   },
   {
@@ -187,14 +187,14 @@
     "createdAt": "2024-01-02T09:05:00.000Z"
   },
   {
-    "_id": "welcome-to-your-vault",
+    "_id": "welcome-to-your-project",
     "projectId": "project-1",
     "parentId": null,
     "type": "file",
-    "title": "Welcome to Your Vault",
-    "path": "/Welcome to Your Vault",
+    "title": "Welcome to Your Project",
+    "path": "/Welcome to Your Project",
     "children": [],
-    "content": "---\ntags: home, welcome\n---\n\n# Welcome to Your Vault 👋\n\nTake a deep breath and relax. This is your personal space to think, write, and connect your ideas. \n\nWhether you're writing code, drafting a novel, or organizing your thoughts, we've got you covered.\n\n## Where to start?\nIf you're new here, we recommend checking out the [[/Formatting Guide/Basic Typography]] guide, or jumping straight into [[/Formatting Guide/Advanced Components]] if you want to see what this editor can really do.\n\nCurious about how your notes connect? Open the [[/Knowledge Base/The Graph View]].",
+    "content": "---\ntags: home, welcome\n---\n\n# Welcome to Your Project 👋\n\nThis is your workspace for writing, organizing, and connecting ideas.\n\nEverything here is powered by markdown — simple, flexible, and powerful.\n\n---\n\n## What You Can Do\n\n- Write structured notes using headings and formatting\n- Organize ideas with lists, tables, and tasks\n- Add code snippets and diagrams\n- Link notes together to build a knowledge system\n\n---\n\n## Start Writing\n\nLearn how formatting works by exploring examples:\n\n- [[/Formatting Examples/Headings]] — structure your content\n- [[/Formatting Examples/Bold & Italic]] — emphasize text\n- [[/Formatting Examples/Lists]] — organize ideas\n- [[/Formatting Examples/Code Blocks]] — write code\n- [[/Formatting Examples/Tables]] — display structured data\n- [[/Formatting Examples/Mermaid Diagrams]] — create diagrams\n\n---\n\n## Connect Your Notes\n\nLink your notes together to build relationships between ideas:\n\n- [[/Formatting Examples/Internal Links]] — link between notes\n- [[/Formatting Examples/Links]] — external and internal links\n\n---\n\n## Work Efficiently\n\nUse built-in tools to edit faster and smarter:\n\n- [[/Context Menu]] — quick formatting and insert tools\n- [[/Editor Options]] — switch between editing modes\n\n---\n\n## Customize Your Workspace\n\nMake the editor feel like your own:\n\n- [[/Settings/Settings]] — overview of settings\n- [[/Settings/Appearance]] — themes, fonts, and layout\n\n---\n\n## Example\n\nHere’s a simple note you can try:\n\n```markdown\n# My First Note\n\n## Tasks\n- [ ] Learn markdown\n- [ ] Build something\n\n## Idea\nThis is ==important== and this is *emphasized*.\n\n## Code\n    ```javascript\n    console.log(\"Hello world\");\n    ```\n```\n\n---\n\n## Tips\n\n- Start small — write a few lines and expand\n- Use formatting to make content readable\n- Link notes to build a connected system\n\n---\n\nYou're ready. Start writing 🚀",
     "createdAt": "2024-01-01T10:00:00.000Z"
   },
   {
@@ -244,10 +244,10 @@
   {
     "_id": "node-editor-options",
     "projectId": "project-1",
-    "parentId": null,
+    "parentId": "node-settings",
     "type": "file",
     "title": "Editor Options",
-    "path": "/Editor Options",
+    "path": "/Settings/Editor Options",
     "children": [],
     "content": "# Editor Options\n\nEditor Options let you control how a file is displayed and managed.\n\n## How to open\n\nRight-click on a tab at the top of the editor.\n\nThis will open the tab menu.\n\n## View modes\n\n### Reading View\n\nSwitch between editable content and a clean reading layout.\n\n- Focus on content without editing distractions\n\n### Source Mode\n\nView the raw markdown source of your note.\n\n- See the underlying formatting symbols\n\n### Chunk Mode\n\nSplit the document into editable sections.\n\n- Useful for working with large notes\n- Available only in supported files\n\n## Tab management\n\nYou can manage open tabs directly from the menu:\n\n- Close Tab\n- Close Others\n- Close Tabs to the Right\n\n## Try it\n\n1. Open multiple notes\n2. Right-click on a tab\n3. Try switching to Reading View or Source Mode\n4. Close tabs using the menu options\n\n## Notes\n\n- Some options may not appear depending on the file\n- View modes only affect the current tab\n- Changes do not modify your content\n\nTo learn how to edit content, see [[/Context Menu]].",
     "createdAt": "2024-01-03T09:20:00.000Z"
